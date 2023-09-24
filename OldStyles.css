@@ -1,0 +1,120 @@
+:root {
+  --border-radius: 6px;
+  --padding: 20px;
+  /* --margin: 20px; */
+}
+
+* {
+  /* border: 1px solid purple; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav > ul > li {
+  list-style: none;
+  margin-right: 12px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  padding: 20px 10px 20px 10px;
+  width: 90vw;
+  margin: 0 0 20px 0;
+  border-radius: var(--border-radius);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(96, 9, 158);
+}
+
+.card img {
+  width: 300px;
+  border-radius: var(--border-radius);
+}
+
+.card > * {
+  margin: 5px 0px;
+}
+.card > button {
+  padding: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.items {
+  margin: 4px 40px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three equal-width columns */
+  grid-template-rows: auto; /* Automatically sized rows */
+  grid-gap: 40px; /* Gap between grid cells */
+  justify-items: center;
+  align-items: center;
+  /* align-items: space-around; */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sidebar css */
+.sidebar {
+  width: 200px;
+  height: 900px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+main {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  margin: 20px;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.items .column {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: space-around; */
+}
+
+.column > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
